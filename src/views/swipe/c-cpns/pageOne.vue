@@ -1,20 +1,18 @@
 <template>
   <div class="page-one">
     <div class="arrow_up">
-	    <span></span>
-	    <span></span>
+      <span></span>
+      <span></span>
     </div>
-   </div>
+  </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="less" scoped>
 .page-one {
   height: 100%;
-  background-image: url("@/assets/img/画板1.png");
+  background-image: url('@/assets/img/画板1.png');
   background-size: 100% 100%;
   // background-position: center center;
   background-repeat: no-repeat;
@@ -50,12 +48,11 @@
   }
 
   .arrow_up span:nth-of-type(1) {
-    -webkit-animation-delay: .15s;
-    animation-delay: .15s;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
   }
 
   @-webkit-keyframes up {
-
     //动画设置
     0% {
       opacity: 0;

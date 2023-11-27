@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 // src/libs/api.request.js
 import HttpRequest from './axios'
 import config from '../config'

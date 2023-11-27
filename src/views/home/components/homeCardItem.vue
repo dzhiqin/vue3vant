@@ -5,14 +5,12 @@
       <div class="dec">产品选择创保贷</div>
     </div>
     <div class="right">
-      <img style="width: 25px;height: 25px;" src="@/assets/img/chuangye.png" alt="">
+      <img style="width: 25px; height: 25px" src="@/assets/img/chuangye.png" alt="" />
     </div>
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="less" scoped>
 .home-card-item {
@@ -23,7 +21,9 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 6px 13px 10px 0px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    6px 13px 10px 0px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
   .name {
     font-size: 18px;
@@ -33,7 +33,6 @@
 
   .dec {
     font-size: 12px;
-
   }
 }
 </style>

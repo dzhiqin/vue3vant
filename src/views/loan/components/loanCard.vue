@@ -1,13 +1,7 @@
 <template>
-  <div class="loan-card">
-   
-  </div>
+  <div class="loan-card"></div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="less" scoped>
-
-</style>
+<style lang="less" scoped></style>

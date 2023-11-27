@@ -8,7 +8,7 @@
       <van-grid-item class="my-grid-item">
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/diamond.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/gold.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/gold.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/抵押.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -22,15 +22,14 @@
             <img src="@/assets/img/marketing/还款2.png" class="" alt="">
           </div> -->
           <!-- <img src="@/assets/img/marketing/hand-money.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/bankcard.png" class="img" alt="">
-
+          <img src="@/assets/img/marketing2/bankcard.png" class="img" alt="" />
         </slot>
         <slot name="text"><div class="name">贷款提前还款预约</div></slot>
       </van-grid-item>
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/graphs.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/all.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/all.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/营销4.png" class="img" alt=""> -->
         </slot>
         <slot name="text"><div class="name">营销辅助</div></slot>
@@ -38,7 +37,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/receipt.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/notemoney.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/notemoney.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/申报备案.png" class="img" alt=""> -->
         </slot>
         <slot name="text"><div class="name">优惠利率贷款报备</div></slot>
@@ -46,7 +45,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/cloud.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/bag.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/bag.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/资产.png" class="img" alt=""> -->
         </slot>
         <slot name="text"><div class="name">资产盘点</div></slot>
@@ -60,7 +59,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/tablet-charts.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/finance.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/finance.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/icon-部门绩效.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -76,7 +75,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/hammer.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/check.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/check.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/投票表决.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -86,7 +85,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/paper-seal.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/people.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/people.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/信息维护.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -96,7 +95,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/image.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/image.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/image.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/海报.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -106,7 +105,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/fjnx-card.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/bankcard.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/bankcard.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/bank-card.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -116,7 +115,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/paper-seal.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/notemoney2.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/notemoney2.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/申请.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -126,7 +125,7 @@
       <van-grid-item>
         <slot name="icon">
           <!-- <img src="@/assets/img/marketing/barcode.png" class="img" alt=""> -->
-          <img src="@/assets/img/marketing2/qrcode.png" class="img" alt="">
+          <img src="@/assets/img/marketing2/qrcode.png" class="img" alt="" />
           <!-- <img src="@/assets/img/marketing/qrcode.png" class="img" alt=""> -->
         </slot>
         <slot name="text">
@@ -137,45 +136,43 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="less" scoped>
 @font-face {
   font-family: alibaba;
-  src: url("@/assets/css/font/alibaba.woff");
+  src: url('@/assets/css/font/alibaba.woff');
 }
 
 .loan {
   background: #f5f5f5;
-  .van-grid{
+  .van-grid {
     background: white;
   }
-  &-title{
+  &-title {
     display: flex;
     padding: 20px;
     background: white;
   }
-  &-title:not(:first-child){
+  &-title:not(:first-child) {
     margin-top: 20px;
   }
-  &-dot{
+  &-dot {
     width: 12px;
     height: 12px;
     background: red;
     border-radius: 50%;
     margin-right: 10px;
   }
-  .img{
+  .img {
     width: 36px;
     height: 36px;
   }
-  .img >img{
+  .img > img {
     width: 100%;
     // height: 100%;
   }
-  .name{
+  .name {
     font-size: 12px;
     margin-top: 6px;
     text-align: center;

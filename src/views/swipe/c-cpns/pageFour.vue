@@ -1,15 +1,13 @@
 <template>
   <div class="page-four">
     <div class="logo">
-      <img src="@/assets/img/logo.png" alt="">
+      <img src="@/assets/img/logo.png" alt="" />
     </div>
     <div class="box">
       <div class="top-image">
-        <img src="@/assets/img/beijing3.png" alt="">
+        <img src="@/assets/img/beijing3.png" alt="" />
       </div>
-      <div class="title">
-        您和你的配偶有无未结清的经营贷款或10万元以上的消费类贷款?
-      </div>
+      <div class="title">您和你的配偶有无未结清的经营贷款或10万元以上的消费类贷款?</div>
       <div class="input">
         <van-cell-group inset>
           <van-field
@@ -18,44 +16,45 @@
             is-link
             readonly
             @click="showPicker = true"
-            />
+          />
         </van-cell-group>
       </div>
-    </div> 
+    </div>
     <van-popup v-model:show="showPicker" round position="bottom">
-        <van-picker
-          :columns="columns"
-          @cancel="showPicker = false"
-          @confirm="onConfirm"
-        />
+      <van-picker :columns="columns" @cancel="showPicker = false" @confirm="onConfirm" />
     </van-popup>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 const columns = [
   { text: '1个', value: 'one' },
   { text: '2个', value: 'two' },
   { text: '3个', value: 'three' },
   { text: '4个', value: 'four' },
-  { text: '5个', value: 'five' },
-];
-const fieldValue = ref('');
-const showPicker = ref(false);
+  { text: '5个', value: 'five' }
+]
+const fieldValue = ref('')
+const showPicker = ref(false)
 
 const onConfirm = ({ selectedOptions }) => {
-  showPicker.value = false;
-  fieldValue.value = selectedOptions[0].text;
-};
+  showPicker.value = false
+  fieldValue.value = selectedOptions[0].text
+}
 </script>
 
 <style lang="less" scoped>
 .page-four {
   position: relative;
   height: 100%;
-  background: linear-gradient(158.26deg, rgba(255, 255, 255, 1) 0%, rgba(153, 188, 254, 1) 99.73%, rgba(153, 188, 254, 1) 100.73%);
+  background: linear-gradient(
+    158.26deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(153, 188, 254, 1) 99.73%,
+    rgba(153, 188, 254, 1) 100.73%
+  );
   padding: 20px;
   box-sizing: border-box;
 
@@ -93,7 +92,7 @@ const onConfirm = ({ selectedOptions }) => {
     .title {
       font-size: 24px;
       font-weight: 700;
-      color: #3335E9;
+      color: #3335e9;
       margin-top: 20px;
     }
 

@@ -17,13 +17,12 @@ let props = defineProps({
 </script>
 
 <style lang="less" scoped>
-.grid-img{
+.grid-img {
   widows: 51px;
-  height: 51px
+  height: 51px;
 }
-.grid-name{
+.grid-name {
   font-size: 12px;
   margin-top: 4px;
 }
-
 </style>

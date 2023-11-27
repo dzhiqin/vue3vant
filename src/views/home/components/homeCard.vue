@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import cardItem from "./homeCardItem.vue"
+import cardItem from './homeCardItem.vue'
 </script>
 
 <style lang="less" scoped>

@@ -7,8 +7,8 @@ export const useUserStore = defineStore('user', () => {
   const userInfo = ref({})
   const token = ref('')
   function login(loginparams) {
-    myLogin(loginparams).then(res => {
-      if(res.status === 200){
+    myLogin(loginparams).then((res) => {
+      if (res.status === 200) {
         token.value = res.data.token
         userInfo.value = res.data.userInfo
         setToken(res.data.token)
@@ -17,5 +17,5 @@ export const useUserStore = defineStore('user', () => {
     })
   }
 
-  return {userInfo,token,login}
+  return { userInfo, token, login }
 })

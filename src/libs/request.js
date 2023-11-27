@@ -18,10 +18,12 @@ service.interceptors.request.use(
 )
 service.interceptors.response.use(
   (response) => {
-    if(response.status === 200) {
-      const {data: {code,message,result}} = response
-      return {status: code, message, data: result}
-    }else{
+    if (response.status === 200) {
+      const {
+        data: { code, message, result }
+      } = response
+      return { status: code, message, data: result }
+    } else {
       return Promise.reject(new Error(response || 'error'))
     }
   },

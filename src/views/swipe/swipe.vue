@@ -1,6 +1,6 @@
 <template>
   <div class="swipe">
-    <van-swipe style="height: 100%;" vertical :show-indicators="false" :loop="false">
+    <van-swipe style="height: 100%" vertical :show-indicators="false" :loop="false">
       <van-swipe-item>
         <page-two></page-two>
       </van-swipe-item>
@@ -16,15 +16,9 @@
 
 <script setup>
 // import pageOne from './c-cpns/pageOne';
-import pageTwo from './c-cpns/pageTwo';
-import pageSix from './c-cpns/pageSix';
-import pageSeven from './c-cpns/pageSeven';
-
-
-
-
-
-
+import pageTwo from './c-cpns/pageTwo'
+import pageSix from './c-cpns/pageSix'
+import pageSeven from './c-cpns/pageSeven'
 </script>
 
 <style lang="less" scoped>

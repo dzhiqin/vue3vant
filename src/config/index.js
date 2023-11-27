@@ -4,5 +4,5 @@ export default {
     dev: 'https://jcgb.ssrcb.com/jcgbprod/',
     prod: 'https://jcgb.ssrcb.com/jcgbprod/'
   },
-  PROJECT_TITLE: "ssrcb"
+  PROJECT_TITLE: 'ssrcb'
 }

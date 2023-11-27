@@ -4,54 +4,63 @@
       <slot></slot>
       <span @mouseover="mouseover(num)" v-for="num in 5" :key="num">☆</span>
       <span class="hollow" :style="fontWidth">
-        <span @click="updateRate(num)" @mouseover="mouseover(num)" v-for="num in 5" :key="num">★</span>
+        <span @click="updateRate(num)" @mouseover="mouseover(num)" v-for="num in 5" :key="num"
+          >★</span
+        >
       </span>
     </div>
   </div>
 </template>
 <script setup>
-import { computed,ref } from 'vue';
+import { computed, ref } from 'vue'
 let props = defineProps({
   modelValue: Number,
   theme: {
     type: String,
     default: 'orange'
-  },
+  }
 })
 // let width = ref(props.value)
 let width = ref(props.modelValue)
-function mouseover(i){
+function mouseover(i) {
   width.value = i
 }
 
-function mouseout(){
+function mouseout() {
   // width.value = props.value
   width.value = props.modelValue
 }
 let emits = defineEmits(['update:modelValue'])
 function updateRate(num) {
-  emits('update:modelValue',num)
+  emits('update:modelValue', num)
 }
 const fontWidth = computed(() => `width:${width.value}em;`)
 // let rate = computed(() => "★★★★★☆☆☆☆☆".slice(5-props.value,10-props.value))
-let rate = computed(() => "★★★★★☆☆☆☆☆".slice(5 - props.modelValue, 10 - props.modelValue))
-const themeObj = { 'black': '#00', 'white': '#fff', 'red': '#f5222d', 'orange': '#fa541c', 'yellow': '#fadb14', 'green': '#73d13d', 'blue': '#40a9ff',}
-const fontStyle=computed(() => `color:${themeObj[props.theme]}`)
+const themeObj = {
+  black: '#00',
+  white: '#fff',
+  red: '#f5222d',
+  orange: '#fa541c',
+  yellow: '#fadb14',
+  green: '#73d13d',
+  blue: '#40a9ff'
+}
+const fontStyle = computed(() => `color:${themeObj[props.theme]}`)
 </script>
 <style lang="less">
-.rate{
-  position:relative; 
+.rate {
+  position: relative;
   display: inline-block;
 }
-.rate > span.hollow { 
-  position:absolute; 
-  display: inline-block; 
-  top:0; left:0; 
-  width:0; 
-  overflow:hidden;
+.rate > span.hollow {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
 }
 </style>
-
 
 <!-- <template>
   <div :style="fontstyle">

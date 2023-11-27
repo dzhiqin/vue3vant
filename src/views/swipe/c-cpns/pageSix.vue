@@ -1,47 +1,50 @@
 <template>
   <div class="page-six">
     <div class="logo">
-      <img src="@/assets/img/logo.png" alt="">
+      <img src="@/assets/img/logo.png" alt="" />
     </div>
     <div class="box">
       <div class="top-image">
-        <img src="@/assets/img/beijing5.png" alt="">
+        <img src="@/assets/img/beijing5.png" alt="" />
       </div>
-      <div class="title">
-        目前创业担保贷贴息政策最高减免2%(以人社局最终审核为准)
-      </div>
-    </div> 
+      <div class="title">目前创业担保贷贴息政策最高减免2%(以人社局最终审核为准)</div>
+    </div>
     <div class="arrow_up">
-	    <span></span>
-	    <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+// import { ref } from 'vue';
 
-const columns = [
-  { text: '1个', value: 'one' },
-  { text: '2个', value: 'two' },
-  { text: '3个', value: 'three' },
-  { text: '4个', value: 'four' },
-  { text: '5个', value: 'five' },
-];
-const fieldValue = ref('');
-const showPicker = ref(false);
+// const columns = [
+//   { text: '1个', value: 'one' },
+//   { text: '2个', value: 'two' },
+//   { text: '3个', value: 'three' },
+//   { text: '4个', value: 'four' },
+//   { text: '5个', value: 'five' },
+// ];
+// const fieldValue = ref('');
+// const showPicker = ref(false);
 
-const onConfirm = ({ selectedOptions }) => {
-  showPicker.value = false;
-  fieldValue.value = selectedOptions[0].text;
-};
+// const onConfirm = ({ selectedOptions }) => {
+//   showPicker.value = false;
+//   fieldValue.value = selectedOptions[0].text;
+// };
 </script>
 
 <style lang="less" scoped>
 .page-six {
   position: relative;
   height: 100%;
-  background: linear-gradient(158.26deg, rgba(255, 255, 255, 1) 0%, rgba(153, 188, 254, 1) 99.73%, rgba(153, 188, 254, 1) 100.73%);
+  background: linear-gradient(
+    158.26deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(153, 188, 254, 1) 99.73%,
+    rgba(153, 188, 254, 1) 100.73%
+  );
   padding: 20px;
   box-sizing: border-box;
 
@@ -71,7 +74,6 @@ const onConfirm = ({ selectedOptions }) => {
     justify-content: center;
 
     .top-image {
-
       img {
         width: 100%;
       }
@@ -80,7 +82,7 @@ const onConfirm = ({ selectedOptions }) => {
     .title {
       font-size: 24px;
       font-weight: 700;
-      color: #3335E9;
+      color: #3335e9;
       margin-top: 20px;
     }
 
@@ -123,12 +125,11 @@ const onConfirm = ({ selectedOptions }) => {
   }
 
   .arrow_up span:nth-of-type(1) {
-    -webkit-animation-delay: .15s;
-    animation-delay: .15s;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
   }
 
   @-webkit-keyframes up {
-
     //动画设置
     0% {
       opacity: 0;

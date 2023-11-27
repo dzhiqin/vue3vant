@@ -1,44 +1,37 @@
 <template>
   <div class="page-two">
     <div class="logo">
-      <img src="@/assets/img/logo.png" alt="">
-    </div>
-    
-   <div class="content">
-    <div class="title">创业担保贷款</div>
-
-    <div class="center-image">
-
+      <img src="@/assets/img/logo.png" alt="" />
     </div>
 
-    <div class="dec-box">
-      <div class="inner-box">
-        政府贴息的创业资金
+    <div class="content">
+      <div class="title">创业担保贷款</div>
+
+      <div class="center-image"></div>
+
+      <div class="dec-box">
+        <div class="inner-box">政府贴息的创业资金</div>
       </div>
     </div>
-   </div>
 
-   <div class="arrow_up">
-	    <span></span>
-	    <span></span>
+    <div class="arrow_up">
+      <span></span>
+      <span></span>
     </div>
   </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="less" scoped>
 .page-two {
   position: relative;
   height: 100%;
-  background-image: url("@/assets/img/mengban.png");
+  background-image: url('@/assets/img/mengban.png');
   background-size: cover;
   background-position: center;
   padding: 20px;
   box-sizing: border-box;
-
 
   .logo {
     position: fixed;
@@ -61,7 +54,7 @@
       left: calc(50% - 167.5px);
       font-size: 50px;
       font-weight: 700;
-      color: #3335E9;
+      color: #3335e9;
       text-align: center;
     }
 
@@ -71,17 +64,15 @@
       width: 300px;
       top: calc(50% - 150px);
       left: calc(50% - 150px);
-      background-image: url("@/assets/img/chahua.png");
+      background-image: url('@/assets/img/chahua.png');
       background-size: cover;
       background-position: center;
-
     }
 
     .dec-box {
       display: flex;
       align-items: center;
       justify-content: center;
-      ;
       position: absolute;
       height: 150px;
       width: 335px;
@@ -98,7 +89,7 @@
         border-radius: 15px;
         background-color: #fff;
         font-size: 26px;
-        color: #3335E9;
+        color: #3335e9;
         font-weight: 700;
         text-align: center;
         line-height: 100px;
@@ -135,12 +126,11 @@
   }
 
   .arrow_up span:nth-of-type(1) {
-    -webkit-animation-delay: .15s;
-    animation-delay: .15s;
+    -webkit-animation-delay: 0.15s;
+    animation-delay: 0.15s;
   }
 
   @-webkit-keyframes up {
-
     //动画设置
     0% {
       opacity: 0;
@@ -172,6 +162,5 @@
       opacity: 0;
     }
   }
-
 }
 </style>

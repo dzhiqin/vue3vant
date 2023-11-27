@@ -15,7 +15,7 @@ export default defineComponent({
   //   )
   // }
   setup(props, { slots }) {
-    const tag = 'h'+props.level
+    const tag = 'h' + props.level
     return () => <tag>{slots.default()}</tag>
   }
 })

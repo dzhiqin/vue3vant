@@ -34,7 +34,6 @@ defineProps({
   }
 
   .name {
-
     font-size: 20px;
     line-height: 18px;
     font-weight: 600;

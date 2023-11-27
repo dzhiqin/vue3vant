@@ -15,26 +15,22 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
-import { useRouter } from "vue-router"
+// import { computed } from "vue";
+// import { useRouter } from "vue-router"
 
-const images = ["https://picsum.photos/375/150?1", "https://picsum.photos/375/150?2", "https://picsum.photos/375/150?3"]
-const router = useRouter()
+// const images = ["https://picsum.photos/375/150?1", "https://picsum.photos/375/150?2", "https://picsum.photos/375/150?3"]
+// const router = useRouter()
 
-const getAutoPlay = computed(() => {
-  return router.currentRoute.value.name === "loan" ? "false" : 2000;
-})
+// const getAutoPlay = computed(() => {
+//   return router.currentRoute.value.name === "loan" ? "false" : 2000;
+// })
 
-
-const swipeClick = (index) => {
-  console.log(router.currentRoute.value);
-  if (index === 2) {
-    router.push({ name: 'loan' })
-  }
-}
-
-
+// const swipeClick = (index) => {
+//   console.log(router.currentRoute.value);
+//   if (index === 2) {
+//     router.push({ name: 'loan' })
+//   }
+// }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
