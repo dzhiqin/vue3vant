@@ -1,38 +1,38 @@
-# newCitizen-bank
+## 石狮农商H5项目
+### 推荐IDE
 
-This template should help get you started developing with Vue 3 in Vite.
+[VSCode](https://code.visualstudio.com/)
 
-## Recommended IDE Setup
+### 自定义配置
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
+## 项目设置
+安装依赖
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发模式
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### 打包dist文件
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+###  ESLint工作流
+[ESLint](https://eslint.org/)样式审查 + husky
 
 ```sh
-npm run lint
+npm run lint // 执行样式审查
 ```
+
+提交代码的时候必须通过样式审查，并且符合提交规范才能提交成功
 
 ```
 feat: 新功能
@@ -52,3 +52,5 @@ release: 发版
 deps: 依赖相关的修改
 
 ```
+
+例如： `git commit -m 'fix: 修复一些已知问题'`
