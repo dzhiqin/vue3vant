@@ -1,4 +1,4 @@
-## 石狮农商H5项目
+## ssrcb-h5项目
 ### 推荐IDE
 
 [VSCode](https://code.visualstudio.com/)
@@ -29,10 +29,11 @@ npm run build
 [ESLint](https://eslint.org/)样式审查 + husky
 
 ```sh
-npm run lint // 执行样式审查
+npm run lint // 执行格式审查
+npm run format // 执行格式调整
 ```
 
-提交代码的时候必须通过样式审查，并且符合提交规范才能提交成功
+提交代码的时候必须通过格式审查，并且符合提交规范才能提交成功
 
 ```
 feat: 新功能
