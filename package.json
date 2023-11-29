@@ -38,6 +38,9 @@
     "vite": "^4.4.11"
   },
   "lint-staged": {
-    "src/**/*.{vue,js,cjs,mjs}": ["prettier --write","npx eslint --cache --fix --no-ignore"]  
+    "src/**/*.{vue,js,cjs,mjs}": [
+      "prettier --write",
+      "npx eslint --cache --fix --no-ignore"
+    ]
   }
 }

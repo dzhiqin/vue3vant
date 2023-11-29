@@ -3,7 +3,7 @@
     <div class="logo">
       <img src="@/assets/img/logo.png" alt="" />
     </div>
-    <div class="box">
+    <div class="box" @scroll="onScroll">
       <div class="title">创业担保贷款</div>
       <div class="dec">请留下您的姓名与电话,我们会在三个工作日内与您联系。</div>
       <van-form @submit="onSubmit" ref="form">
@@ -76,7 +76,7 @@
         </div>
       </van-form>
     </div>
-    <div class="arrow_up">
+    <div class="arrow_up" v-if="showPointer">
       <span></span>
       <span></span>
     </div>
@@ -104,12 +104,17 @@ const columns = [
 ]
 const showPicker = ref(false)
 const fieldValue = ref('')
-
+const showPointer = ref(true)
 const onConfirm = ({ selectedOptions }) => {
   showPicker.value = false
   fieldValue.value = selectedOptions[0].text
 }
-
+const onScroll = (e) => {
+  const { scrollTop, clientHeight, scrollHeight } = e.target
+  if (scrollTop + clientHeight + 10 >= scrollHeight) {
+    showPointer.value = false
+  }
+}
 const onSubmit = (values) => {
   console.log('submit', values)
   const { name, address, phone, radio1, radio2, radio3 } = values
@@ -178,8 +183,8 @@ const onSubmit = (values) => {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    overflow-y: auto;
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
     top: calc(50% - 250px);
 
     .title {
@@ -230,6 +235,7 @@ const onSubmit = (values) => {
       height: 45px;
       border-radius: 30px;
       margin-top: 15px;
+      padding: 0 12px;
     }
   }
 

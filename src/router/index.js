@@ -41,6 +41,11 @@ const router = createRouter({
       component: () => import('../views/login/login.vue')
     },
     {
+      path: '/test',
+      name: 'login',
+      component: () => import('../views/test/test.vue')
+    },
+    {
       path: '/:pathMatch(.*)',
       redirect: '/404'
     },
@@ -51,7 +56,7 @@ const router = createRouter({
     }
   ]
 })
-const whiteList = ['/login', '/404', '/403', '/500', '/home']
+const whiteList = ['/login', '/404', '/403', '/500', '/home', '/test']
 router.beforeEach(async (to, from, next) => {
   const userStore = useUserStore()
   const token = userStore[TOKEN] || getToken()
